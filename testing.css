@@ -1,0 +1,89 @@
+/* Mit CSS 
+(C) Copyright 2017: Niels Østergaard
+Eksempler på CSS Grid */
+
+body {
+    font-family: sans-serif;
+    background-color: #999999;
+    margin: 1em;
+}
+
+#mitgrid div {
+    font-size: 5em;
+    color: #000000;
+    text-align: center;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+#mitgrid {
+    display:grid; 
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 2fr 1fr 1fr 1fr; 
+}
+
+#mitgrid div:nth-child(1){
+    background-color: blueviolet;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#felt2 {
+    background-color: #009e0f;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#felt3 {
+    background-color: #0ff;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#felt4 {
+    background-color: #90f;
+    color: #fff;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#felt5 {
+    background-color: #f90;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#felt6 {
+    background-color: #274e13;
+    color: #fff;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+#felt8 {
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #000;
+    color: #aaa;
+    padding: 0.1em;
+}
+
+
+@media screen and (min-width: 500px){
+    #mitgrid div {
+        display: grid;
+        grid-gap: 0 0.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 4fr 3fr 5fr;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "c d"
+            "e f"
+            "g g";
+    }
+}
+

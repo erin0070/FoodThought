@@ -73,10 +73,14 @@ header {
 
 #auto1 {
     grid-area: c;
+    margin-top: 50px;
+    text-align: center;
 }
 
 #auto2 {
     grid-area: d;
+    margin-top: 50px;
+    text-align: center;
 }
 
 #pic1 {

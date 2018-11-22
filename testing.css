@@ -1,89 +1,153 @@
-/* Mit CSS 
-(C) Copyright 2017: Niels Østergaard
-Eksempler på CSS Grid */
+/* CSS Grid for Food Thought*/
 
 body {
-    font-family: sans-serif;
-    background-color: #999999;
+    background-color: #ffff;
     margin: 1em;
 }
 
-#mitgrid div {
-    font-size: 5em;
-    color: #000000;
+
+header {
+    grid-area: a;
     text-align: center;
-    border-color: #000000;
-    border-width: 2px;
-    border-style: dashed;
+    height: 600px;
 }
 
-#mitgrid {
-    display:grid; 
-    grid-template-columns: 1fr 3fr; 
-    grid-template-rows: 2fr 1fr 1fr 1fr; 
+#tagline {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    margin: -5px;
 }
 
-#mitgrid div:nth-child(1){
-    background-color: blueviolet;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
-    grid-column-start: 1;
-    grid-column-end: 2;
+#bigimage {
+    grid-area: b;
+    align-items: stretch;
 }
 
-#felt2 {
-    background-color: #009e0f;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
-}
 
-#felt3 {
-    background-color: #0ff;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
+#backgroundpicture {
+    height: auto;
+    width: 100%;
+    opacity:;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
-
-#felt4 {
-    background-color: #90f;
-    color: #fff;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
+/*
+.box {
+    background-color: black;
+    position: absolute;
+     height: 50%;
+  width: 100%;
+  top: 45%;
+    opacity: .8;
+    
 }
-
-#felt5 {
-    background-color: #f90;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
-}
-
-#felt6 {
-    background-color: #274e13;
-    color: #fff;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
-}
-
-#felt8 {
-    font-size: 0.8em;
+*/
+.copytitle {
+  color: white;
+    margin: 100;
+    padding: 295px;  
+    position:absolute;
+    left:0;
+    right: 0;
+    bottom:0;
     text-align: center;
-    background-color: #000;
-    color: #aaa;
-    padding: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background: rgb (0, 0 , 0);
+    background: rgba (0, 0, 0, 0.7);
 }
 
+.copymain {
+    color: white;
+    margin: 100;
+    padding: 60px;  
+    position:absolute;
+    left:0;
+    right: 0;
+    bottom:0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
 
-@media screen and (min-width: 500px){
-    #mitgrid div {
-        display: grid;
-        grid-gap: 0 0.5em;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 4fr 3fr 5fr;
-        grid-template-areas: 
+#auto1 {
+    grid-area: c;
+}
+
+#auto2 {
+    grid-area: d;
+}
+
+#pic1 {
+    grid-area: e;
+}
+
+#pic2 {
+    grid-area: f;
+}
+
+footer {
+    grid-area: g;
+    background-color: ;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    width: 100%;
+   
+    
+}
+
+#minilogo {
+    background: #b5302b;
+    height: 80px;
+    width: 80px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+#forslag {
+    margin-left: 100px;
+    margin-top: -90px;
+    margin-bottom: 0px;
+    
+}
+
+h2 {
+    padding-bottom: -12px;
+}
+
+a {
+    color: #F29901;
+    padding-top: -10px;
+    margin-top: -10px;
+}
+
+p {
+    margin-top: -10px;
+}
+#contactinformation {
+    
+    float: right;
+    margin-right: 20px;
+    margin-top: -100px;
+    text-align: right;
+}
+
+#copyrightinformation {
+    float: right;
+}
+
+#pagewrap {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 1fr;
+    grid-template-areas: 
             "a a"
             "b b"
             "c d"
             "e f"
-            "g g";
-    }
+            "g g"
 }
-

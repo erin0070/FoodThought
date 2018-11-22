@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="skiftBillede1()">
+  <option value="Audi">Audi
+  <option value="Aqurk">Aqurk
+  <option value="All In One MusliBar">All In One MusliBar
+  <option value="Appelsin">Appelsin
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<script>
+function skiftBillede1() {
+    var x = document.getElementById("mySelect").value;
+   
+    {
+        switch (x) {
+            case "Aqurk":             
+                document.getElementById("billede1").src = "1B.jpg";
+                break
+            case "All In One MusliBar":
+                document.getElementById("billede1").src = "3B.jpg";
+                break
+            case "Appelsin":
+                myImage ("3B.jpg");
+                break
+        }
+        
+    };
+    checkCase()
+    
+}
+</script>
+    
+    <!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+      <title>div image</title>
+        <link rel="stylesheet" href="tryitout.css">
+    </head>
+    
+   <body> 
+        <section id="text to left">
+            <div id="item1A"> <img src="1B.jpg" id="billede1"> </div>
+        </section>
+    
+    </body>
+</html>

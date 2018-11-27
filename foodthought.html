@@ -10,12 +10,11 @@
     <body>
         <div id="pagewrap">
              <header> 
-                <img src="logo.jpg" logo>
+                <img src="logo.jpg" style="width: 42.6%; max-width: 512px; height: auto" alt="logo">
             </header>
-        </div>
-        <section id="bigimage">
+            <section id="bigimage">
                 <div class="box"></div>
-                 <img src="thinnerbackgroundimage2.jpg", alt="Food Thought Background picture", id="backgroundpicture">
+                 <img src="thinnerbackgroundimage2.jpg",  alt="Food Thought Background picture", id="backgroundpicture">
         </section>
         <!--
             <section id="auto1">
@@ -145,11 +144,11 @@
         
         <section id="texttoleft"> 
             <div id="item1A"> 
-                <img src="1A.jpg" id="billede1"> 
+                <img src="1A.jpg" style="width: 100%"; height="auto" id="billede1"> 
              </div>
         </section> 
      </section>
-    <section id="pic2"> 
+        <section id="pic2"> 
              <select id="mySelect2" onchange="skiftBillede2()">  
                      <option value="Agurk">Aqurk
                      <option value="All in one muslibar">All in one Muslibar
@@ -188,35 +187,39 @@
         
         <section id="texttoright"> 
             <div id="item1B">
-                <img src="1B.jpg" id="billede2"> 
+                <img src="1B.jpg" style="width: 100%"; height="auto" id="billede2"> 
             </div>
         </section>
     </section>
     <section>
         <footer>
-            <div>
-                <img src="minilogo.jpg", alt="Food Thought Mini Logo", id="minilogo"> 
+            
+            <div id="footerleft" style="float: left;" class="content">
+                    <h2>Har du forslag til Os?</h2>
+                        <p id="mailto">               
+                            <a href="mailto:foodthoughtforslag@gmail.com">SKRIVE HER</a>
+                        </p>
             </div>
-            <div id ="forslag">
-                <h2>Har du forslag til Os?</h2>
-                    <p>               
-                        <a href="mailto:foodthoughtforslag@gmail.com">SKRIVE HER</a>
-                    </p>
-            </div>
-            <section id="contactinformation">
-                <h2>Kontakt</h2>
+            <!--<div>
+                <img src="minilogo.jpg",  alt="Food Thought Mini Logo", id="minilogo"> 
+            </div> -->
+            <div id="footerright" style="float: right;" class="content">
+                <h2 id="kontakt">Kontakt</h2>
                     <p> 
                         <a href="mailto:erinlgertsen@gmail.com">Erin Gertsen</a>                            
                         <a  href="mailto:unplugedrose@hotmail.com">Christina Fodgaard</a>
                     </p>
-            </section>
-                <div id="copyrightinformation">
-                    <p id="copyright information">
+                <br>
+                <p id="copyright">
                     Erhvervsakademi Dania - Skive &copy;2018
-                    </p>
+                </p>
             </div>
+            <!--<div>
+                <img src="minilogo.jpg",  alt="Food Thought Mini Logo", id="minilogo"> 
+            </div> -->
         </footer>
     </section>
+    </div>
     </body>
 </html>
 

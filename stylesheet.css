@@ -1,0 +1,289 @@
+/* CSS Grid for Food Thought*/
+ /*  MOBILE  */
+#pagewrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+header {
+    grid-area: a;
+    text-align: center;
+    height: 75px;
+    margin-top: 25px;
+    padding-bottom: 0;
+}
+
+
+#bigimage {
+    grid-area: b;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+
+
+#backgroundpicture {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: inherit;
+}
+/*
+.box {
+    background-color: black;
+    position: absolute;
+     height: 50%;
+  width: 100%;
+  top: 45%;
+    opacity: .8;
+    
+}
+*/
+
+/*
+#auto1 {
+    grid-area: c;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#auto2 {
+    grid-area: d;
+    margin-top: 50px;
+    text-align: center;
+}
+*/
+select#mySelect {
+    height: 20px;
+    width: 150px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    text-align-last: center;
+    align-items: center;
+    
+}
+
+select#mySelect2 {
+    height: 20px;
+    width: 150px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    text-align-last: center;
+    align-items: center;
+}
+#pic1 {
+    grid-area: e;
+    margin-top: 30px;
+    text-align: right;
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+}
+
+#pic2 {
+    grid-area: f;
+    margin-top: 30px;
+    text-align: right;
+    width: 50%;
+    float: right;
+}
+
+#footerleft {
+    grid-area: g;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    height: 50px;
+    width: 100%;   
+    text-align: left;
+}
+
+#footerright {
+    grid-area: h;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    height: 50px;
+    width: 100%;   
+    text-align: right;
+}
+
+footer {
+    grid-area: g;
+}
+a {
+    padding-bottom: 100px;
+}
+.content {
+    display: block;
+    width: 50%;
+}
+
+#minilogo {
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+
+h2 {
+    padding-bottom: -12px;
+}
+
+a {
+    color: #F29901;
+    padding-top: -10px;
+    margin-top: -10px;
+}
+
+p {
+    margin-top: -10px;
+}
+
+/* TABLET  */
+@media screen and (min-width: 768px) {
+    #pagewrap {
+         display: grid;
+        width: 100%;
+         grid-gap: 0em;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 250px 1fr;
+         grid-template-areas: 
+            "a a"
+            "b b"
+            "e f"
+            "g g";
+    }
+    
+    #bigimage {
+        margin-top: -50px;
+    }
+    
+   
+    
+    #pic1 {
+    grid-area: e;
+    margin-top: 30px;
+    text-align: right;
+    width: 100%;
+    float: right;
+    }
+
+    #pic2 {
+    grid-area: f;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    }
+  
+    select#mySelect {
+        margin-left: 0;
+    }
+}
+/*  LAPTOP  */
+@media only screen and (max-width: 1440px) {
+    #pagewrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 1fr;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "e f"
+            "g g";
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    select#mySelect {
+        height: 40px;
+        width: 400px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 18px;
+        text-align-last: center;
+        align-items: center;
+        margin-bottom: 10px;    
+        margin-left: 45px;
+    }
+    
+    #pic1 {
+        float: left;
+        text-align: left;
+        align-content: left;
+        width: 100%;
+        
+    }
+    
+    #bigimage {
+        margin-top:15px;
+    }
+
+    select#mySelect2 {
+        height: 40px;
+        width: 400px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 18px;
+        text-align-last: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-right: 45px;
+    }
+    
+    #pic2 {
+        width: 100%;
+    }
+    
+    footer {
+        height: 100px;
+    }
+    
+    #footerleft {
+    grid-area: g;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    height: 50px;
+    width: 100%;  
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    }
+
+    #footerright {
+    grid-area: h;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    height: 50px;
+    width: 100%;   
+    float: right;
+    text-align: right;
+    margin-top: -62px;
+    margin-right: 15px;
+    }
+    
+    #minilogo {
+    text-align: center;
+    align-content: center;
+    margin-left: 475px;
+    margin-top: -35px;
+    height: 60px;
+    width: 60px;
+    }
+}
